@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BASIC CALCULATOR</title>
+    <style>
+        div.container {
+            margin-left: 700px;
+            width: 600px;
+            height: 400px;
+            justify-content: center;
+            background-color: aliceblue;
+        }
+        div.inner-item {
+            margin-left: 100px;
+            padding: 10px;            
+        }
+        div.inner-item >input{
+            border-radius: 10px;
+        }
+        div.inner-item >button{
+            border-radius: 10px;
+            background-color: rgb(58, 192, 91);
+        }
+        .outer-item {
+            position: absolute;
+            margin-left: 100px;
+            margin-top: 30px;
+            width: 400px;
+            height:100px;
+            border: solid darkblue;
+            border-radius: 10px;
+            background-color: white;
+        }
+        .outer-item > #result {
+            font-family:cursive;
+            font-size: xx-large;
+            font-weight: bolder;
+            text-align: right;
+            margin-top: 20px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="margin-left: 120px; color: blue;">Basic Calculator</h1>
+        <div class="inner-item">
+            <input type="text" name="" placeholder="Enter Number" id="inp-1"> 
+            <button onclick="add()">Addition +</button> 
+        </div>
+        <div class="inner-item">
+            <input type="text" name="" placeholder="Enter Number" id="inp-2">
+            <button onclick="subtract()">Subtract -</button>            
+        </div>
+        <div class="inner-item">    
+            <button onclick="refresh()" style="background-color: rgb(0, 0, 255); color: white;">Refresh</button>   
+            <button onclick="multiply()" style="margin-left: 70px;">Multiply &nbsp;x</button>
+            <button onclick="divide()">Division &nbsp;/</button>
+        </div>
+        <div class="outer-item">          
+            <p id="result"></p>
+        </div>
+    </div>
+    <script>
+        function add(){
+           var num1=document.getElementById("inp-1").value
+           var num2=document.getElementById("inp-2").value
+           var result = parseFloat(num1) + parseFloat(num2)
+            document.getElementById("result").innerHTML =  result.toFixed(3)
+        }
+        function subtract(){
+           var num1=document.getElementById("inp-1").value
+           var num2=document.getElementById("inp-2").value
+           var result = parseFloat(num1) - parseFloat(num2)
+            document.getElementById("result").innerHTML =  result.toFixed(3)
+        }
+        function multiply(){
+           var num1=document.getElementById("inp-1").value
+           var num2=document.getElementById("inp-2").value
+           var result = parseFloat(num1)*parseFloat(num2)
+            document.getElementById("result").innerHTML =  result.toFixed(3)
+        }
+        function divide(){
+           var num1=document.getElementById("inp-1").value
+           var num2=document.getElementById("inp-2").value
+           var result = parseFloat(num1)/parseFloat(num2)
+            document.getElementById("result").innerHTML = result.toFixed(3)
+        }
+        function refresh(){
+            location.reload(true)
+        }
+    </script>
+
+
+
+</body>
+</html>

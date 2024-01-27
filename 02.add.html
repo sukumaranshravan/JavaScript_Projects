@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Two Numbers</title>
+</head>
+<body>
+    <h1>Add Two Numbers</h1>
+    <button onclick="calculate()">Calculate</button>
+
+
+    <script>
+        function calculate(){
+            var a = parseInt(prompt("1st Number: "))
+            var b = parseInt(prompt("2nd Number: "))
+            var sum = a+b
+            document.querySelector("h1").style.color = "Blue"
+            document.querySelector("h1").innerHTML = "The Sum is = " + sum
+        }
+    </script>
+</body>
+</html>

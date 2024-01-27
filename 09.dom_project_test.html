@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Display-Color</title>
+    <style>
+        #title {
+            text-align: center;
+        }
+        div.container {
+           margin-left: 800px;          
+        }
+    </style>
+</head>
+<body>
+    <h1 class="color" id="title">Color Change in JavaScript</h1>
+    <div class="container">
+        <button id="green">Green</button>
+        <button id="blue">Blue</button>
+        <button id="red">Red</button>
+        <button id="yellow">Yellow</button>
+    </div>
+    <script>
+        var btnTxt = document.querySelector("#green").innerHTML
+        
+        if(btnTxt==="Green"){
+        addEventListener("click",function(){                       
+            document.querySelector("h1").style.color="Green"
+           }   )        
+        }
+
+        else if(btnTxt==="Blue"){
+        addEventListener("click",function(){
+            document.querySelector("h1").style.color="Blue"
+           }   )        
+        }  
+        else if(btnTxt==="Red"){
+        addEventListener("click",function(){
+            document.querySelector("h1").style.color="Red"
+           }   )        
+        }  else{
+            addEventListener("click",function(){
+            document.querySelector("h1").style.color="Yellow"
+           }   )   
+        }     
+               
+    </script>
+</body>
+</html>

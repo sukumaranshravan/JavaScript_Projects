@@ -1,0 +1,52 @@
+.calc-body{
+    width: 600px;
+    height: 830px;
+    border: solid black 5px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: rgb(46, 45, 45);
+}
+.clac-display{
+    width: 550px;
+    height: 100px;
+    border: solid black 3px;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: rgb(245, 241, 241);
+    font-size: xx-large;
+    text-align: right;
+    font-weight: bolder;
+    justify-content: center;
+}
+.calc-button{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    
+
+}
+button {
+    height: 100px;
+    width: 100px;            
+    margin: auto;
+    margin-top: 20px;
+    border: solid rgb(74, 72, 72);
+    border-radius: 10px;
+    background-color: rgb(127, 125, 125);
+    font-size: xx-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+.company {
+    text-align: right;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: azure;
+
+}
+.extra-btn{
+    background-color: rgb(235, 112, 112);
+}

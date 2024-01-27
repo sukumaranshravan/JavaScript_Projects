@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even Odd Check</title>
+</head>
+<body>
+    <button onclick="show()">Check the Number</button>
+
+
+    <script>        
+        function show(){
+            var num = prompt("Enter the number: ")
+            if (num===0){
+                console.log("0 is Neither even nor odd.")
+            } else if(num%2===0){
+                console.log("Even")
+            } else{
+                console.log("Odd")
+            }
+            
+        }
+    </script>
+</body>
+</html>

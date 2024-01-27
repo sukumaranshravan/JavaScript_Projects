@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Display-Color</title>
+    <style>
+        #box {
+            height: 500px;
+            width: 800px;
+            border: solid darkblue;
+           margin-left: 550px;
+           margin-bottom: 50px;
+        }
+        div.container {
+           margin-left: 800px;          
+        }
+        #green{
+            background-color: green;
+            color: white;
+        }
+        #blue{
+            background-color: blue;
+            color: white;
+        }
+        #red{
+            background-color: red;
+            color: white;
+        }
+        #yellow{
+            background-color: yellow;
+            color: rgb(0, 0, 0);
+        }
+
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Background Color Generator</h1>
+    <div id="box">
+
+    </div>
+    <div class="container">
+        <!-- button clicks passes the color as argument to the parameter paint in the function insdie the script -->
+        <button onclick="color_gen('blue')" id="blue">Click</button>
+        <button onclick="color_gen('green')" id="green">Click</button>  
+        <button onclick="color_gen('red')" id="red">Click</button>
+        <button onclick="color_gen('yellow')" id="yellow">Click</button>
+    </div>
+    <script>
+        function color_gen(paint){
+            document.getElementById("box").style.backgroundColor = paint
+        }
+    </script>
+</body>
+</html>

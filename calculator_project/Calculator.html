@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- script if provided here will result in slow loading of the website, if script is too large
+    it is a best practice to provide script at the lower part of the html body -->
+</head>
+<body>
+    <div class="calc-body">
+        <div class="clac-display">
+            <p id="screen"></p>
+        </div>
+        <div class="calc-button">
+            <button onclick="show(7)" >7</button>
+            <button onclick="show(8)" >8</button>
+            <button onclick="show(9)" >9</button> 
+            <button onclick="show('+')" >+</button>
+            <button onclick="show(4)" >4</button>
+            <button onclick="show(5)" >5</button>
+            <button onclick="show(6)" >6</button>
+            <button onclick="show('-')">-</button>
+            <button onclick="show(1)" >1</button>
+            <button onclick="show(2)" >2</button>
+            <button onclick="show(3)" >3</button>
+            <button onclick="show('*')" >x</button>
+            <button onclick="show(0)" >0</button>
+            <button onclick="show('.')" >.</button>
+            <button onclick="result()" >=</button>
+            <button onclick="show('/')" >÷</button>              
+            <button onclick="clean()" class="extra-btn">AC</button> 
+            <button onclick="refresh()" class="extra-btn" style="background-color: rgb(9, 186, 118);">C</button>         
+        </div>
+        <div class="company">
+            <h1>CASIO</h1>
+        </div>
+    </div>
+
+    <!-- providing script below html body will ease the site loading process, so that user don't have to wait too long(this is for loger scripts) -->
+    <script src="./index.js"></script>
+
+</body>
+</html>

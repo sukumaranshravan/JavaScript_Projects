@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Display-Color</title>
+    <style>
+        #title {
+            text-align: center;
+        }
+        div.container {
+           margin-left: 800px;          
+        }
+    </style>
+</head>
+<body>
+    <h1 class="color" id="title">Color Change in JavaScript</h1>
+    <div class="container">
+        <button onclick="displayg()" class="green">Green</button>
+        <button onclick="displayb()" class="blue">Blue</button>
+        <button onclick="displayr()" class="red">Red</button>
+        <button onclick="displayy()" class="yellow">Yellow</button>
+    </div>
+    <script>
+        
+        function displayg(){
+            if(document.querySelector("button.green").innerHTML==="Green")
+            document.querySelector("h1").style.color = "green"           
+        }
+        function displayb(){
+            if(document.querySelector("button.blue").innerHTML==="Blue")
+            document.querySelector("h1").style.color = "blue"           
+        }
+        function displayr(){
+            if(document.querySelector("button.red").innerHTML==="Red")
+            document.querySelector("h1").style.color = "red"            
+        }
+        function displayy(){
+            if(document.querySelector("button.yellow").innerHTML==="Yellow")
+            document.querySelector("h1").style.color = "yellow"           
+        }     
+               
+    </script>
+</body>
+</html>

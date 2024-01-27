@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic JS</title>
+</head>
+<body>
+    <h1>Click The Button to Change Me.</h1>
+    <button id="btn">Change Heading</button>
+    <script>        
+        addEventListener("click",function(){
+            var action = document.querySelector("h1")
+            action.style.color = "Blue"
+            action.innerHTML = "You Are Doing Great!"
+        })        
+    </script>
+</body>
+</html>
